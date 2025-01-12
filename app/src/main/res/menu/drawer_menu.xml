@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/theme1"
+        android:title="Theme 1" />
+    <item
+        android:id="@+id/theme2"
+        android:title="Theme 2" />
+    <item
+        android:id="@+id/theme3"
+        android:title="Theme 3" />
+</menu>

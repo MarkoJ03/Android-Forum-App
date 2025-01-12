@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/login_background">
+
+
+    <TextView
+        android:id="@+id/postDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naslov posta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:id="@+id/postDetailsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sadržaj posta..."
+        android:textSize="16sp"
+        android:layout_below="@id/postDetailsTitle"
+        android:layout_marginBottom="16dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/postDetailsContent"
+        android:layout_above="@id/commentInputLayout"
+        android:layout_marginBottom="16dp" />
+
+
+    <LinearLayout
+        android:id="@+id/commentInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#EEEEEE">
+
+        <EditText
+            android:id="@+id/commentInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Dodajte komentar"
+        android:padding="8dp" />
+
+        <Button
+            android:id="@+id/commentSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pošalji"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/button_color"
+            />
+    </LinearLayout>
+</RelativeLayout>

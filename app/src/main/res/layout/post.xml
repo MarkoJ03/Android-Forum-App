@@ -1,0 +1,72 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:padding="16dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:id="@+id/postContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp"
+            android:text="Naslov posta"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/postContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postTitle"
+            android:layout_marginBottom="8dp"
+            android:text="Sadržaj posta..."
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/postAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postContent"
+            android:text="Autor: Korisničko ime"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+
+        <ImageButton
+            android:id="@+id/buttonDeletePost"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Delete Post"
+            android:src="@drawable/ic_delete" />
+
+
+        <ImageButton
+            android:id="@+id/buttonEditPost"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_toStartOf="@id/buttonDeletePost"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Edit Post"
+            android:src="@drawable/ic_edit" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
