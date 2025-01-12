@@ -56,8 +56,8 @@ The MySQL database is designed with clear relational structures:
 * Validation for unique usernames during registration.
 
 ### Error Handling:
-*Comprehensive error messages for failed API requests.
-*Validation messages for empty fields or invalid inputs.
+* Comprehensive error messages for failed API requests.
+* Validation messages for empty fields or invalid inputs.
 
 
 
@@ -70,7 +70,7 @@ To run this project, follow these steps:
 
 * Ensure Python 3.x is installed on your system.
 * Install MySQL or connect to an existing MySQL database.
-* 
+  
 2. Clone the Repository:
 ```
 git clone <repository-url>
@@ -100,6 +100,7 @@ python main.py
 5. Verify the Backend:
 
 * Check that the Flask server is running on http://127.0.0.1:5000 or your configured IP and port.
+
   
 ### Frontend Setup (Android App)
 
