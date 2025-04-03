@@ -89,7 +89,7 @@ mysql -u <your-username> -p <database-name> < path/to/database/yourfile.mbw
 
 * Navigate to the backend folder:
 ```
-cd backend
+cd flask-rest-api
 ```
 *Run the Python script:
 
@@ -159,3 +159,4 @@ public final static String URL = "http://<your-backend-ip>:5000";
 - **UI**: Material Design, RecyclerView, Fragments
 
 Enjoy using the Forum Application!
+
